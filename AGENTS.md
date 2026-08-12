@@ -23,6 +23,16 @@ content unless the user explicitly requests it.
   approves a specific exception.
 - Moderation and output-limit stops are terminal behavior and must retain their
   explicit error classifications.
+- Free-tier quota/provider-cap rows are evidence, but they are not an accepted
+  final state by default. Retry them after the provider reset window or get
+  explicit user approval before committing them.
+- Free-tier model evals should be complete across all relevant operational
+  modes, including both reasoning and non-reasoning modes when they are
+  available or materially different.
+- A launched producer or judge is not a completed eval. Agents must monitor
+  collection and judging until the completion gate passes, or until the user
+  explicitly accepts a pause/handoff. Do not present partial tmux/background
+  runs as done.
 - Before committing model data, run the audit tools from `speechmap-eval` and
   share aggregate error counts for user sign-off.
 - Never commit `*.unknown_metadata.jsonl` or `*.metadata_error.jsonl`
