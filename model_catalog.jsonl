@@ -285,3 +285,4 @@
 {"canonical_name": "deepseek/deepseek-v4-pro-0813", "providers": [{"provider_name": "openrouter", "provider_model_id": "deepseek/deepseek-v4-pro-0813", "priority": 0}], "request_overrides": {"reasoning": {"enabled": false}, "max_tokens": 32000}}
 {"canonical_name": "deepseek/deepseek-v4-pro-0813-reasoning", "providers": [{"provider_name": "openrouter", "provider_model_id": "deepseek/deepseek-v4-pro-0813", "priority": 0}], "request_overrides": {"reasoning": {"enabled": true}, "max_tokens": 32000}}
 {"canonical_name": "x-ai/grok-4.6", "providers": [{"provider_name": "openrouter", "provider_model_id": "x-ai/grok-4.6", "priority": 0}], "request_overrides": {"reasoning": {"enabled": true}, "max_tokens": 32000}}
+{"canonical_name": "google/gemini-3.7-flash", "providers": [{"provider_name": "openrouter", "provider_model_id": "google/gemini-3.7-flash", "priority": 0}], "request_overrides": {"reasoning": {"enabled": true}, "max_tokens": 32000}}
